@@ -4,14 +4,11 @@
 
 <!-- Special Dates Calendar -->
 <template>
-  <h1>CALENDAR</h1>
   <template if:true={isMomentLoaded}>
-    <lightning-card>
+    <lightning-card icon-name="utility:dayview" title="Calendar">
       <div class="dates">
         <div class="buttonContainer">
-          <button class="link" type="button" onclick={gotoToday}>
-            Today
-          </button>
+          <button type="button" onclick={gotoToday}>Today</button>
           <p>{formattedSelectedDate}</p>
           <p class="bold">{year}</p>
         </div>
@@ -35,22 +32,25 @@
         </ul>
         <ul class="datePickerHolder">
           <template for:each={dateNodes} for:item="date">
-            <li key={date.formatted}
-                class={date.className}
-                data-date={date.formatted}
-                onclick={setSelected}>
+            <li
+              key={date.formatted}
+              class={date.className}
+              data-date={date.formatted}
+              onclick={setSelected}
+            >
               {date.text}
             </li>
           </template>
         </ul>
-      </div><br/>
-        <div class="slds-m-around_medium slds-align_absolute-center">
+      </div>
+      <br />
+      <div slot="footer">
+        <div class="slds-align_absolute-center">
           <ul class="legend">
             <li><span class="today"></span> Today</li>
           </ul>
         </div>
-        <div class="slds-align_absolute-center">
-        </div>
+      </div>
     </lightning-card>
   </template>
 </template>

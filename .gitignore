@@ -9,6 +9,7 @@
 .idea/
 config/dev1-scratch-def.json
 IlluminatedCloud/
+package-lock.json
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json

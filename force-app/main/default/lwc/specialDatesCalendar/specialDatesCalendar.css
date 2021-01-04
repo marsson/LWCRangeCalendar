@@ -2,136 +2,158 @@
  * Created by marcelo.cost on 20/12/20.
  */
 .bold {
-    font-size: 20px;
-    font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .link {
-    color: #007bff;
-    border: 0;
+  color: #007bff;
+  border: 0;
 }
 
 .dates {
-    width: 400px;
-    border: 1px solid gray;
-    border-radius: 16px;
-    margin: 0 auto;
+  width: 400px;
+  border: 1px solid gray;
+  border-radius: 16px;
+  margin: 0 auto;
 }
 
 .dates ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 364px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 364px;
+  margin: 0 auto;
 }
 
 .dates .datePickerHolder {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 50px;
-    min-height: 50px;
-    margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 1px;
 }
 
 .buttonContainer {
-    width: 364px;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
+  width: 364px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
 }
 
 .prev,
 .next {
-    border: none;
-    width: 70px;
-    background-color: white;
+  border: none;
+  width: 70px;
+  background-color: white;
 }
 
 .prev:hover,
 .next:hover,
 .link:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .prev:before {
-    content: '←';
-    padding-right: 4px;
+  content: "←";
+  padding-right: 4px;
 }
 
 .next:after {
-    content: '→';
-    padding-left: 4px;
+  content: "→";
+  padding-left: 4px;
 }
 
 .datePickerHolder li {
-    color: black;
-    cursor: pointer;
-    border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .header li {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-.dates{
-    background-color: white;
+.dates {
+  background-color: white;
 }
 
 .datePickerHolder li:hover {
-    background-color: red;
+  background-color: red;
 }
 
 .datePickerHolder .padder {
-    color: gray;
+  color: gray;
 }
 
 .datePickerHolder .today {
-    background-color: orange;
-    border-radius: 50%;
-    background-size: 50%;
+  background-color: orange;
+  border-radius: 50%;
+  background-size: 50%;
 }
 
 .datePickerHolder .day0 {
-    background-color: fuchsia;
+  background-color: fuchsia;
 }
 
 .datePickerHolder .interval1 {
-    background-color: rgba(86, 22, 204, 0.418);
+  background-color: rgba(86, 22, 204, 0.418);
 }
 
 .datePickerHolder .interval2 {
-    background-color: darkgreen;
+  background-color: darkgreen;
 }
 
-.datePickerHolder .interval3{
-    background-color: rgb(197, 14, 54);
+.datePickerHolder .interval3 {
+  background-color: rgb(197, 14, 54);
 }
 
 .datePickerHolder .selected {
-    background-color: pink;
+  background-color: pink;
 }
 
+.selected {
+  background-color: pink;
+}
 
 /* basic positioning */
-.legend { list-style: none; clear: both; }
-.legend li { float: left; margin-right: 8px;}
-.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
-/* your colors */
-.legend .symptomOnsetdate { background-color: fuchsia }
-.legend .acquisitionPeriod { background-color:rgba(86, 22, 204, 0.418)}
-.legend .infectiousPeriod { background-color: rgb(197, 14, 54) }
-.legend .today {
-    background-color:orange;
-    border-radius: 50%;
-    display: inline-block;
-
+.legend {
+  list-style: none;
+  clear: both;
 }
-.legend .overlapPeriod { background-color:darkgreen; }
+.legend li {
+  float: left;
+  margin-right: 8px;
+}
+.legend span {
+  border: 1px solid #ccc;
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin: 2px;
+}
+/* your colors */
+.legend .symptomOnsetdate {
+  background-color: fuchsia;
+}
+.legend .acquisitionPeriod {
+  background-color: rgba(86, 22, 204, 0.418);
+}
+.legend .infectiousPeriod {
+  background-color: rgb(197, 14, 54);
+}
+.legend .today {
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+}
+.legend .overlapPeriod {
+  background-color: darkgreen;
+}
