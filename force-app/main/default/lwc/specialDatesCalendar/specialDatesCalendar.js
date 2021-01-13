@@ -5,7 +5,7 @@
  *
  */
 
-import { LightningElement, api, track } from "lwc";
+import { LightningElement, api, track } from "lwc"; 
 import MOMENT from "@salesforce/resourceUrl/momentJS";
 import { loadScript } from "lightning/platformResourceLoader"; // to load libs
 
