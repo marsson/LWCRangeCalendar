@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateCharacter__c</fullName>
+    <description>Character that will represent the date on the calendar and the legend.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>This character will be displayed on the calendar to represent the date. Can use emojis.</inlineHelpText>
+    <label>Date Character</label>
+    <length>1</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
