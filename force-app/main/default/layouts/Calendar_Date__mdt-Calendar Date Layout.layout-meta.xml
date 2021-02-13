@@ -7,14 +7,6 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>MasterLabel</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>DeveloperName</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>DateName__c</field>
             </layoutItems>
@@ -24,14 +16,6 @@
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>IsProtected</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>NamespacePrefix</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>DateCharacter__c</field>
@@ -53,8 +37,24 @@
                 <behavior>Readonly</behavior>
                 <field>CreatedById</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>NamespacePrefix</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>IsProtected</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>DeveloperName</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>MasterLabel</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>LastModifiedById</field>
