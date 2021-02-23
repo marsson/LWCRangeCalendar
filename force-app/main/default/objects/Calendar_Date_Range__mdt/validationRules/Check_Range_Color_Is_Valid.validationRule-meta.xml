@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Range_Color_Is_Valid</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(
+    OR(
+				    REGEX(Range_Color__c, &quot;#[0-9a-f]{6}&quot;),
+        UPPER(Range_Color__c) = &quot;BLACK&quot;,
+				    UPPER(Range_Color__c) = &quot;SILVER&quot;,
+							 UPPER(Range_Color__c) = &quot;GRAY&quot;,
+								UPPER(Range_Color__c) = &quot;WHITE&quot;,
+								UPPER(Range_Color__c) = &quot;MAROON&quot;,
+								UPPER(Range_Color__c) = &quot;RED&quot;,
+								UPPER(Range_Color__c) = &quot;PURPLE&quot;,
+								UPPER(Range_Color__c) = &quot;FUCHSIA&quot;,
+								UPPER(Range_Color__c) = &quot;GREEN&quot;,
+								UPPER(Range_Color__c) = &quot;LIME&quot;,
+								UPPER(Range_Color__c) = &quot;OLIVE&quot;,
+								UPPER(Range_Color__c) = &quot;YELLOW&quot;,
+								UPPER(Range_Color__c) = &quot;NAVY&quot;,
+								UPPER(Range_Color__c) = &quot;BLUE&quot;,
+								UPPER(Range_Color__c) = &quot;TEAL&quot;,
+								UPPER(Range_Color__c) = &quot;AQUA&quot;
+							)
+		)</errorConditionFormula>
+    <errorDisplayField>Range_Color__c</errorDisplayField>
+    <errorMessage>This color is not valid. Please enter basic colours or RGB.</errorMessage>
+</ValidationRule>
